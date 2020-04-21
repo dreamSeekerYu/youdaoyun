@@ -48,3 +48,39 @@ You can check out [the Next.js GitHub repository](https://github.com/zeit/next.j
 The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+#### 舍弃 styled-jsx 配置 sass 、css 模块化
+
+```
+yarn add @zeit/next-sass node-sass @zeit/next-css
+
+// next.config.js 文件中添加
+const withSass = require('@zeit/next-sass')
+module.exports = withSass({
+  postcssLoaderOptions: {
+    parser: true,
+    config: {
+      ctx: {
+        theme: JSON.stringify(process.env.REACT_APP_THEME)
+      }
+    }
+  }
+})
+
+// next.config.js   兼容  css 和 sass
+const withCSS = require('@zeit/next-css')
+const withSass = require('@zeit/next-sass')
+module.exports = () =>
+  withSass(
+    withCSS({
+      postcssLoaderOptions: {
+        parser: true,
+        config: {
+          ctx: {
+            theme: JSON.stringify(process.env.REACT_APP_THEME),
+          },
+        },
+      },
+    })
+  )
+```
