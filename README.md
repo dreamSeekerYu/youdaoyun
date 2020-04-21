@@ -1,3 +1,23 @@
+### next.js 默认框架
+
+### [发布在 gitHub 上面](https://github.com/dreamSeekerYu/youdaoyun)
+
+```
+    https://github.com/dreamSeekerYu/youdaoyun
+```
+
+### [zeit 自动化部署](https://zeit.co/dreamseekeryu/youdaoyun)
+
+```
+    https://zeit.co/dreamseekeryu/youdaoyun
+```
+
+### [访问地址](https://youdaoyun.now.sh/)
+
+```
+    https://youdaoyun.now.sh/
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
