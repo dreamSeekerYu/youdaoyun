@@ -60,6 +60,14 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+        button {
+          width:80vw;
+          margin-left:5vw;
+          max-width:300px;
+          height:50px;
+          border-radius:10px;
+          border:none;
+        }
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
