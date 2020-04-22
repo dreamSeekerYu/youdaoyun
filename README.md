@@ -84,3 +84,23 @@ module.exports = () =>
     })
   )
 ```
+
+#### 添加 antd 按需加载
+
+yarn add antd babel-plugin-import -s
+.babelrc 文件
+
+```
+{
+  "presets": ["next/babel"], // 覆盖nextjs的默认babel配置，以本文件的babel配置为准
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd" // 将antd的引入写法转换成按需引入写法
+        //"style": "css", // 统一导入antd的样式
+      }
+    ]
+  ]
+}
+```

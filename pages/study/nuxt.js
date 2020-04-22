@@ -1,4 +1,5 @@
 import styles from './next.scss'
+import { Button } from 'antd'
 
 export default function NUXT_JS() {
   return (
@@ -26,6 +27,7 @@ export default function NUXT_JS() {
           因为您的页面可以构建一次并由CDN提供服务，这比让服务器根据每个请求呈现页面快得多
           `}
       </pre>
+      <Button type="primary">antd-button</Button>
     </div>
   )
 }

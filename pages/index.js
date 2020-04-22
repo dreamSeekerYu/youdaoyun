@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import './index.css'
+import 'antd/dist/antd.css'
+import { Button } from 'antd'
 export default function Home() {
   return (
     <div className="container">
@@ -47,13 +49,16 @@ export default function Home() {
 
       <footer>
         <p>
-          <a href="http://note.youdao.com/noteshare?id=cdceb903fc357fcd530728e5c613dfd8">
-            <button>有道云笔记传送门</button>
-          </a>
-        </p>
-        <p>
+          <Button type="primary">
+            <a href="http://note.youdao.com/noteshare?id=cdceb903fc357fcd530728e5c613dfd8">
+              有道云笔记传送门
+            </a>
+          </Button>
+
           <Link href="/study/nuxt">
-            <button>next.js 试水demo</button>
+            <Button inline type="primary">
+              next.js 试水demo
+            </Button>
           </Link>
         </p>
 
