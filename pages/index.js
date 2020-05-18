@@ -53,11 +53,15 @@ export default function Home() {
             <a href="http://note.youdao.com/noteshare?id=cdceb903fc357fcd530728e5c613dfd8">
               有道云笔记传送门
             </a>
-          </Button>
-
+          </Button>{' '}
           <Link href="/study/nuxt">
             <Button inline type="primary">
               next.js 试水demo
+            </Button>
+          </Link>{' '}
+          <Link href="/xgplayer">
+            <Button inline type="primary">
+              西瓜视频H5播放器demo
             </Button>
           </Link>
         </p>

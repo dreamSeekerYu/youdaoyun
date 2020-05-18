@@ -1,5 +1,5 @@
 button {
-  margin-left: 10px;
+  margin: 10px;
   max-width: 300px;
   height: 50px;
   border-radius: 10px;
@@ -12,7 +12,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/image/bj.jpg') center center no-repeat;
+  background: url("/image/bj.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -81,8 +81,8 @@ code {
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+    monospace;
 }
 
 .grid {
@@ -130,4 +130,8 @@ code {
     width: 100%;
     flex-direction: column;
   }
+}
+
+footer p {
+  line-height: 40px;
 }
