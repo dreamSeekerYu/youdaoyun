@@ -15,15 +15,18 @@ export default class extends Component {
         <h3> 西瓜视频 H5 播放器</h3>
         服务端渲染没有window 报错，尝试改用其他框架
         <div id="mse"></div>
-        <script>
-          {`let player = new Player({
-              id: 'mse',
-              url: '//abc.com/**/*.mp4',
-        })`}
-        </script>
       </div>
     )
   }
+}
+
+{
+  /* <script>
+let player = new Player({
+    id: 'mse',
+    url: '//abc.com/.mp4',
+})
+</script> */
 }
 
 // 纯函数组件没有生命周期

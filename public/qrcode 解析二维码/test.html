@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>my-pro</title>
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="reqrcode.js"></script>
+  </head>
+
+  <body>
+    <input type="file" id="newfile" />
+  </body>
+
+  <script>
+    var newfile = document.getElementById('newfile')
+    var getObjectURL = function (file) {
+      var url = null
+      if (window.createObjectURL != undefined) {
+        // basic
+        url = window.createObjectURL(file)
+      } else if (window.URL != undefined) {
+        // mozilla(firefox)
+        url = window.URL.createObjectURL(file)
+      } else if (window.webkitURL != undefined) {
+        // webkit or chrome
+        url = window.webkitURL.createObjectURL(file)
+      }
+      return url
+    }
+
+    newfile.onchange = function () {
+      //   console.log(newfile[0]);
+      console.log(getObjectURL(this.files[0])) // newfile[0]是通过input file上传的二维码图片文件
+      qrcode.decode(getObjectURL(this.files[0]))
+      qrcode.callback = function (imgMsg) {
+        alert('二维码解析：' + imgMsg)
+      }
+    }
+  </script>
+</html>

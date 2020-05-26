@@ -64,6 +64,11 @@ export default function Home() {
               西瓜视频H5播放器demo
             </Button>
           </Link>
+          <Link href="/qrcode">
+            <Button inline type="primary">
+              二维码生成和解析
+            </Button>
+          </Link>
         </p>
 
         {/* <a
