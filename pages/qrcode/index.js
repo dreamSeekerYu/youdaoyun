@@ -154,7 +154,11 @@ export default class extends Component {
         />
         <hr />
         <p>解析结果:(base64格式的字符串)</p>
-        <a href={qrcodeResultUrl}>{qrcodeResultUrl}</a>
+        <p style={{ width: '300px' }}>
+          <a style={{ 'word-break': 'break-all' }} href={qrcodeResultUrl}>
+            {qrcodeResultUrl}
+          </a>
+        </p>
         <img src={qrcodeResultUrl} alt="ss" />
         <hr />
         <hr />

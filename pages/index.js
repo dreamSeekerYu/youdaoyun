@@ -49,24 +49,9 @@ export default function Home() {
 
       <footer>
         <p>
-          <Button type="primary">
-            <a href="http://note.youdao.com/noteshare?id=cdceb903fc357fcd530728e5c613dfd8">
-              有道云笔记传送门
-            </a>
-          </Button>
-          <Link href="/study/nuxt">
+          <Link href="/pageList">
             <Button inline="true" type="primary">
-              next.js 试水demo
-            </Button>
-          </Link>
-          <Link href="/xgplayer">
-            <Button inline="true" type="primary">
-              西瓜视频H5播放器demo
-            </Button>
-          </Link>
-          <Link href="/qrcode">
-            <Button inline="true" type="primary">
-              二维码生成和解析
+              搓一搓
             </Button>
           </Link>
         </p>
