@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Upload, Button } from 'antd'
 import { UploadOutlined, StarOutlined } from '@ant-design/icons'
-import qrcode from 'qrcode'
+// import qrcode from 'qrcode'
 const QRCode = require('qrcode.react')
 
 // import qrcode from './qrcode'
